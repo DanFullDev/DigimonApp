@@ -64,15 +64,15 @@
 	<div class="text-center mb-5">
 		<div class="flex flex-row justify-center">
 			<button
-				class={searchFilter === 'name'
-					? 'activeButton active:scale-90 transition duration-500 ease-in-out'
-					: 'modeButton active:scale-90 transition duration-500 ease-in-out'}
+				class="{searchFilter === 'name' ? 'activeButton' : 'modeButton'} active:scale-90 transition 
+				duration-500 ease-linear"
 				on:click={() => saveFilter('name')}>Name</button
 			>
 			<button
-				class={searchFilter === 'level'
-					? 'activeButton active:scale-90 transition duration-500 ease-in-out'
-					: 'modeButton active:scale-90 transition duration-500 ease-in-out'}
+				class="{searchFilter === 'level'
+					? 'activeButton'
+					: 'modeButton'} active:scale-90 transition 
+				duration-500  ease-linear"
 				on:click={() => saveFilter('level')}>Level</button
 			>
 		</div>

@@ -11,13 +11,6 @@
 		"lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
 		"format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
 	},
-	"dependencies": {
-		"@lukeed/uuid": "^2.0.0",
-		"bufferutil": "^4.0.3",
-		"cookie": "^0.4.1",
-		"supports-color": "^9.0.2",
-		"utf-8-validate": "^5.0.5"
-	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "next",
 		"@sveltejs/adapter-netlify": "^1.0.0-next.35",
@@ -38,6 +31,5 @@
 		"tslib": "^2.3.1",
 		"typescript": "^4.4.3"
 	},
-	"type": "module",
-	"homepage": "."
+	"type": "module"
 }

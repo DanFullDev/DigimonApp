@@ -16,7 +16,7 @@
 			digimonList.findIndex((element) => {
 				return element.name === 'Magnamon';
 			})
-		].img = '../static/Magnamon_b.jpg';
+		].img = '/Magnamon_b.jpg';
 	});
 
 	function searchDigimonByName(name: string) {

@@ -8,7 +8,7 @@
 		border-solid border-gray-600 
 		border-opacity-70 sm:w-1/6 w-4/6 shadow-2xl transition 
 		duration-500 ease-in-out 
-		transform hover:-translate-y-1 hover:scale-110"
+		transform hover:-translate-y-1 hover:scale-110 rounded-b-xl"
 	>
 		<a class="cursor-pointer" href="/about/digimonInfo">
 			<img src={inputDigimon.img} alt="{inputDigimon.name}'s look" class="w-full" />

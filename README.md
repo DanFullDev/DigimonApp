@@ -13,6 +13,3 @@ Now deployed on Netlify: https://digisvelte.netlify.app/
 - cd into project folder
 - npm i
 - npm run dev to run dev server
-
-# Missing Features
-- Details page (WIP)

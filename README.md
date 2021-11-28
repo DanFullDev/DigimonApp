@@ -6,7 +6,7 @@ Now deployed on Netlify: https://digisvelte.netlify.app/
 # Used dependencies
 - SvelteKit
 - Tailwindcss
-- The public digimon api was used for this small project: https://digimon-api.herokuapp.com/
+- The public digimon api by Shadow Smith was used for this small project: https://digimon-api.herokuapp.com/
 
 # How to run
 - Clone the repository

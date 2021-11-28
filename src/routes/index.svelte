@@ -6,7 +6,7 @@
 
 	let digimonList: any[];
 	let filteredList: any[];
-	let searchFilter: string = '';
+	let searchFilter: string = 'name';
 
 	onMount(async () => {
 		const data = await fetchDigimon();
@@ -64,26 +64,24 @@
 	<div class="text-center mb-5">
 		<div class="flex flex-row justify-center">
 			<button
-				class="{searchFilter === 'name' ? 'activeButton' : 'modeButton'} active:scale-90 transition 
-				duration-500 ease-linear"
+				class={searchFilter === 'name'
+					? 'activeButton active:scale-90 transition duration-500 ease-in-out'
+					: 'modeButton active:scale-90 transition duration-500 ease-in-out'}
 				on:click={() => saveFilter('name')}>Name</button
 			>
 			<button
-				class="{searchFilter === 'level'
-					? 'activeButton'
-					: 'modeButton'} active:scale-90 transition 
-				duration-500  ease-linear"
+				class={searchFilter === 'level'
+					? 'activeButton active:scale-90 transition duration-500 ease-in-out'
+					: 'modeButton active:scale-90 transition duration-500 ease-in-out'}
 				on:click={() => saveFilter('level')}>Level</button
 			>
 		</div>
-		{#if searchFilter !== ''}
-			<input
-				on:input={(e) => filterDigimon(e)}
-				class="border border-gray-600 p-3 w-5/6"
-				type="text"
-				placeholder="Search by Digimon's {searchFilter}..."
-			/>
-		{/if}
+		<input
+			on:input={(e) => filterDigimon(e)}
+			class="border border-gray-600 p-3 w-5/6"
+			type="text"
+			placeholder="Search by Digimon's {searchFilter}..."
+		/>
 	</div>
 	{#if digimonList}
 		<div class="flex flex-row justify-center align-middle flex-wrap">

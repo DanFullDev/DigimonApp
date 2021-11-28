@@ -1,6 +1,8 @@
 # DigimonApp
 Digimon API made with SvelteKit. It can filter Digimon's by either name or level (Rookie, Champion, etc...)
 
+Now deployed on Netlify: https://digisvelte.netlify.app/
+
 # Used dependencies
 - SvelteKit
 - Tailwindcss
@@ -14,4 +16,3 @@ Digimon API made with SvelteKit. It can filter Digimon's by either name or level
 
 # Missing Features
 - Details page (WIP)
-- Deployment on Netlify (TBS)

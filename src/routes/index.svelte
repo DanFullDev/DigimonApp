@@ -6,7 +6,7 @@
 
 	let digimonList: any[];
 	let filteredList: any[];
-	let searchFilter: string = 'name';
+	let searchFilter: string = '';
 
 	onMount(async () => {
 		const data = await fetchDigimon();
@@ -76,12 +76,14 @@
 				on:click={() => saveFilter('level')}>Level</button
 			>
 		</div>
-		<input
-			on:input={(e) => filterDigimon(e)}
-			class="border border-gray-600 p-3 w-5/6"
-			type="text"
-			placeholder="Search by Digimon's {searchFilter}..."
-		/>
+		{#if searchFilter !== ''}
+			<input
+				on:input={(e) => filterDigimon(e)}
+				class="border border-gray-600 p-3 w-5/6"
+				type="text"
+				placeholder="Search by Digimon's {searchFilter}..."
+			/>
+		{/if}
 	</div>
 	{#if digimonList}
 		<div class="flex flex-row justify-center align-middle flex-wrap">

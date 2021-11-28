@@ -1,5 +1,5 @@
 # DigimonApp
-Digimon API made with SvelteKit. It can filter Digimon's by both name or level (Rookie, Champion, etc...)
+Digimon API made with SvelteKit. It can filter Digimon's by either name or level (Rookie, Champion, etc...)
 
 # Used dependencies
 - SvelteKit

@@ -10,9 +10,7 @@
 		duration-500 ease-in-out 
 		transform hover:-translate-y-1 hover:scale-110 rounded-b-xl"
 	>
-		<a class="cursor-pointer" href="/about/digimonInfo">
-			<img src={inputDigimon.img} alt="{inputDigimon.name}'s look" class="w-full" />
-		</a>
+		<img src={inputDigimon.img} alt="{inputDigimon.name}'s look" class="w-full" />
 		<div class="p-5">
 			<div><span>Name: </span>{inputDigimon.name}</div>
 			<div><span>Level: </span>{inputDigimon.level}</div>
